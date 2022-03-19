@@ -63,10 +63,10 @@ void pedEquipBestWeapon(Ped ped)
 	WEAPON::SET_CURRENT_PED_WEAPON(ped, WEAPON::GET_BEST_PED_WEAPON(ped, 0, 0), true, 0, false, false);
 }
 
-Hash getPedEquipedWeapon(Ped ped)
+Hash getPedEquipedWeapon(Ped ped, int attachPoint)
 {
 	Hash weaponHash;
-	WEAPON::GET_CURRENT_PED_WEAPON(ped, &weaponHash, 0, 0, 0);
+	WEAPON::GET_CURRENT_PED_WEAPON(ped, &weaponHash, 0, attachPoint, 0);
 	return weaponHash;
 }
 

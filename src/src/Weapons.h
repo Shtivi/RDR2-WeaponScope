@@ -166,6 +166,6 @@ enum AmmoType
 
 void giveWeaponToPed(Ped ped, WeaponHash hash, int ammo, bool equipNow = false);
 void pedEquipBestWeapon(Ped ped);
-Hash getPedEquipedWeapon(Ped ped);
+Hash getPedEquipedWeapon(Ped ped, int attachPoint = 0);
 Vector3 getPedLastWeaponImpactCoord(Ped ped);
 bool doesPedHaveSidearm(Ped ped);
